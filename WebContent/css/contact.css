@@ -1,0 +1,106 @@
+@charaset"utf-8";
+body{
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    border-bottom: solid 2px #000;
+    background-color: #222;
+    width: 100%;
+}
+h1#PartyBoard{
+	text-align: center;
+    color: #FFFF66;
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;
+    margin: 0;
+    padding-top: 30px;
+}
+.TYColor{
+	color: #FF00FF;
+}
+h4{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+}
+.PartyTextRight{
+	color: 000;
+	position: fixed;
+	top: -65px;
+	right:-270px;
+	font-size:200px;
+	transform: rotate(-90deg);
+}
+h2{
+	margin-top:70px;
+	text-align: center;
+	color: #fff;
+}
+.mail{
+	color: #fff;
+	text-align: center;
+	font-size: 24px
+}
+a.home{
+	color: #bbb;
+	position: fixed;
+	top: 1%;
+	left: 1%;
+	text-decoration: none;
+	font-size: 24px;
+}
+a.home:hover{
+	color: #fff;
+	position: fixed;
+	top: 1%;
+	left: 1%;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+/* SUMAHO‰æ–Ê 600pxˆÈ‰º */
+
+@media screen and (max-width:600px){
+
+body{
+	background: #fff;
+}
+.header {
+    border-bottom: solid 1px #fff;
+    background-color: #222;
+    width: 100%;
+}
+h1#PartyBoard{
+    color: #FFFF66;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 36px;
+    position: absolute;
+    margin: 0;
+   	top: 10px;
+   	left: 5%;
+}
+.TYColor{
+	color: #FF00FF;
+}
+h4{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+}
+.main{
+    width: 100%;
+}
+ul li {
+    list-style: none;
+    margin-top: 10px;
+    width: 100%;
+}
+
+}

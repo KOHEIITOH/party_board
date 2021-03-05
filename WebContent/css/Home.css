@@ -1,0 +1,87 @@
+@charaset"utf-8";
+body{
+	background: #000 url("../images/light.jpg");
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+div{
+	position: relative;
+}
+div p{
+	color: #fff;
+	position: absolute;
+	font-size: 58px;
+	left: 50px;
+	font-family: 'Great Vibes', cursive;
+}
+.TYColor{
+	color: #fff;
+}
+.button {
+  display       : inline-block;
+  font-size     : 39pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 72px 79px;   /* 余白       */
+  background    : #111;     /* 背景色     */
+  color         : #FFFF66;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 1;           /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 5px 5px 13px #666666;  /* 影の設定 */
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  margin: 300px 30% auto 30%;
+  position: absolute;
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 0.8;         /* カーソル時透明度 */
+  background    : #222;
+  font-family: 'Playfair Display', serif;
+  margin: 290px 30% auto 30%;
+  position: absolute;
+}
+
+/* SUMAHO画面 */
+@media screen and (max-width:600px){
+
+body{
+	background: #000 url("../images/light.jpg");
+	width: 100%;
+}
+div p{
+	color: #fff;
+	position: absolute;
+	font-size: 36px;
+	left: 20px;
+	font-family: 'Great Vibes', cursive;
+}
+.button {
+  display       : inline-block;
+  font-size     : 20pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 45px 55px;   /* 余白       */
+  background    : #111;     /* 背景色     */
+  color         : #FFFF66;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 1;           /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 5px 5px 13px #666666;  /* 影の設定 */
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  margin: 200px 5% auto 5%;
+  position: absolute;
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 0.8;         /* カーソル時透明度 */
+  background    : #222;
+  font-family: 'Playfair Display', serif;
+  margin: 190px 5% auto 5%;
+  position: absolute;
+}
+
+}

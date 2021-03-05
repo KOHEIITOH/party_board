@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="./images/faviconP.ico" />
+
+        <title>入力|PARTY BOARD</title>
+
+        <meta http-equiv="Content-Script-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Script-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+        <link rel="stylesheet" type="text/css" href="./css/input.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+		<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Great+Vibes" rel="stylesheet"> -->
+
+    </head>
+
+    <body>
+
+    	<a class="home" href="./Home.html">HOME</a>
+    	<!-- <p class="PartyTextRight"><span class="parColor">PAR</span>TY</p> -->
+
+    	<div class="header">
+        	<h1 class="PartyBorad">PAR<span class="TYColor">TY</span> BOARD</h1>
+        	<h4>- Welcome to PARTY -</h4>
+        </div>
+
+        <div class="main">
+
+            <h3>空欄を入力してください。</h3>
+
+			<p id="inputtext"><span class="textcolor">*</span>必須</p>
+            <br>
+
+        <form action="CheckServlet" method="post" name="info" onSubmit="return check()"> <!--  CheckServlet →　PartyServlet -->
+            <ul>
+                <li>
+                    <label>投稿者<span class="textcolor">*</span></label>
+                    <input type="text" size="35" maxlength='20'name="shimei">
+                </li>
+                <li>
+                    <label>パーティー名<span class="textcolor">*</span></label>
+                    <input type="text" size="35" maxlength='20' name="party">
+                </li>
+                <li>
+                    <label>内容・詳細<span class="textcolor">*</span></label>
+                    <textarea cols="70" rows="12" maxlength='400' name="detail" placeholder="400文字以内" wrap="hard"></textarea>
+                </li>
+            </ul>
+
+            <input class="check" type="submit" value="確認">
+        </form>
+
+		</div>
+
+        <script type="text/javascript">
+		//<![CDATA[
+
+		function check(){
+
+				var flag = 0;
+
+			//　設定開始（必須にする項目を設定してください）
+			if(document.info.shimei.value == ""){ // 「投稿者」の入力をチェック
+
+				flag = 1;
+
+			}
+			else if(document.info.party.value == ""){ // 「パーティー名」の入力をチェック
+
+				flag = 1;
+
+			}
+			else if(document.info.detail.value == ""){ // 「場所」の入力をチェック
+
+				flag = 1;
+
+			}
+			//　設定終了
+
+			if(flag){
+
+				window.alert('必須項目に未入力がありました'); // 入力漏れがあれば警告ダイアログを表示
+				return false; // 送信を中止
+
+			}
+			else{
+
+				return true; // 送信を実行
+
+			}
+
+		}
+
+		//]]>
+		</script>
+    </body>
+</html>

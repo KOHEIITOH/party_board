@@ -1,0 +1,315 @@
+@charaset"utf-8";
+
+@media (min-width:601px){
+body{
+    background: #222 url("../images/starfield.jpg");
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+div{
+	position: relative;
+	margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+h1#PartyBoard{
+    color: #FFFF66;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 54px;
+    position: absolute;
+   	top: 15px;
+   	left: 36%;
+   	/*right: 36%;*/
+}
+.TYColor{
+	color: #FF00FF;
+}
+h4{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    top: 100px;
+   	left: 42%;
+}
+a.home{
+	color: #bbb;
+	position: fixed;
+	top: 1%;
+	right: 1%;
+	text-decoration: none;
+	font-size: 24px;
+}
+a.home:hover{
+	color: #fff;
+	position: fixed;
+	top: 1%;
+	right: 1%;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+/* main */
+div.main{
+	width: 60%;
+	/*margin: 60px 20% auto 20%;*/
+	position: absolute;
+	top: 200px;
+	left: 20%;
+	bottom: auto;
+}
+table{
+	background-color: #FFBBFF;
+	border: solid 2px #fff;
+	border-spacing: 0px;
+	width: 100%;
+	border-radius: 5px;
+}
+tr{
+	padding: 10px;
+	background-color: #FFBBFF;
+}
+td{
+	border-bottom: solid 1px #fff;
+	padding: 10px;
+	color: #000;
+}
+.table{
+	color: #000;
+	margin: 0;
+	padding: 0;
+	font-weight:bold;
+}
+.textColor {
+	color : #f00;
+}
+.toko{
+	padding:3px;
+}
+.date{
+	text-align: right;
+	padding-right: 15px;
+	padding: 3px 15px 3px 3px;
+}
+.detail{
+	margin-top:0;
+	color: #000;
+	font-size:16px;
+}
+.right{
+	color: #ccc;
+	font-size: 36px;
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+	text-decoration: none;
+}
+.right:hover{
+	color: #fff;
+	font-size: 40px;
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+	text-decoration: none;
+}
+
+
+/* 投稿ボタン */
+.con{
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+	position:absolute;
+	left:18%;
+	top:100px;
+}
+.con:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+}
+/* footer */
+.footer p{
+	color: #fff;
+	text-align: center;
+}
+.footer h5{
+	color: #fff;
+	text-align: center;
+}
+
+}
+
+
+
+/* SUMAHO画面 600px以下  */
+
+@media (max-width:600px){
+
+body{
+	background: #222;
+}
+div{
+	position: relative;
+}
+a.home{
+	color: #bbb;
+	position: absolute;
+	top: 1%;
+	text-align: right;
+	text-decoration: none;
+	font-size: 18px;
+}
+h1#PartyBoard{
+    color: #FFFF66;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 36px;F
+    position: absolute;
+   	margin-top: 0;
+   	padding-top: 0;
+   	left: 15%;
+}
+.TYColor{
+	color: #FF00FF;
+}
+h4{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    top: 0px;
+   	left: 25%;
+}
+
+
+/* スマホmain */
+div.main{
+	margin-top: 120px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+p.table{
+	font-size: 12px;
+}
+.detail{
+	font-size: 12px;
+}
+table{
+	background-color: #FFBBFF;
+	border: solid 2px #fff;
+	border-spacing: 0px;
+	width: 100%;
+	border-radius: 5px;
+}
+tr{
+	padding: 10px;
+	background-color: #FFBBFF;
+}
+td{
+	border-bottom: solid 1px #fff;
+	padding: 10px;
+	color: #000;
+}
+.table{
+	color: #000;
+	margin: 0;
+	padding: 0;
+	font-weight:bold;
+}
+.textColor {
+	color : #f00;
+}
+.toko{
+	padding:3px;
+}
+.date{
+	text-align: right;
+	padding-right: 15px;
+	padding: 3px 15px 3px 3px;
+}
+
+
+/* スマホ投稿ボタン　*/
+.con{
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:8px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+	position:absolute;
+	left:1%;
+	top:80px;
+}
+.con:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+}
+.right{
+	color: #ccc;
+	font-size: 36px;
+	position: fixed;
+	bottom: 1%;
+	right: 1%;
+	text-decoration: none;
+}
+
+
+/* スマホfooter */
+.footer p{
+	color: #fff;
+	text-align: center;
+}
+.footer h5{
+	color: #fff;
+	text-align: center;
+}
+
+}
